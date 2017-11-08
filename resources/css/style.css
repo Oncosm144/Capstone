@@ -1,6 +1,221 @@
-/* Universal Styles */
-
-html {
-  font-family: serif;
+body {
   font-size: 16px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 4rem;
+  width: auto;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  z-index: 20;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+#first {
+  font-weight: bold;
+}
+
+#second {
+  color: grey;
+}
+
+.desktop a {
+  margin-left: 1rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+/* Banner */
+
+#banner {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  color: black;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+#banner .picture {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#banner .text {
+  margin: 0 2rem;
+}
+
+#banner h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+#banner h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#banner h3 {
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* Features */
+
+#features  {
+  display: flex;
+}
+
+#features .main img {
+  padding: 2rem 1.5rem;
+}
+
+#features .main .text {
+  margin: 0 2rem;
+}
+
+#features .main h1 {
+  font-size: 3rem;
+}
+
+#features .main h2 {
+  font-size: 2rem;
+}
+
+#features .main h3 {
+  font-size: 1rem;
+}
+
+#features .dates {
+  display: inline-flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+}
+
+#features .info {
+  display: inline-flex;
+  align-items: center;
+  width: 40rem;
+}
+
+.info .picture {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.info .text {
+  width: 65%;
+  margin-left: 6rem;
+  line-height: 2;
+}
+
+.info .text h1 {
+  font-size: 1.5rem;
+}
+
+.info .text h2 {
+  font-size: 1rem;
+}
+
+.info .text h3 {
+  font-size: 1rem;
+  color: blue;
+}
+
+/* Majors */
+
+#majors {
+  background-color: lightgrey;
+  padding: 2rem 0;
+}
+
+#majors h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#majors .text {
+  padding-bottom: 2rem;
+}
+
+#majors .text h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+#majors .text h2,
+#majors .text h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.courses {
+  width: 30%;
+  padding-bottom: 2rem;
+}
+
+.courses img {
+  margin: 0;
+}
+
+/* Exhibits */
+
+#exhibits h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#exhibits .text h1 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+.showing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.video {
+  width: 60%;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
 }

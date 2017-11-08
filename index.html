@@ -7,20 +7,20 @@
     <title>Capstone</title>
   </head>
   <body>
+
     <!-- Header -->
-    <header>
-      <div id="logo">
-        <span><img src="./resources/images/ic-logo.svg" alt="logo" /></span>
-        <span><a>Colmar</a></span>
-        <span><a>Academy</a></span>
+
+    <header class="container">
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="logo" />
+        <h4 id="first">COLMAR</h4>
+        <h4 id="second">ACADEMY</h4>
       </div>
       <nav class="desktop">
-        <ul>
-          <li><a>On campus</a></li>
-          <li><a>Online</a></li>
-          <li><a>For companies</a></li>
-          <li><a>Sign in</a></li>
-        </ul>
+        <a>On campus</a>
+        <a>Online</a>
+        <a>For companies</a>
+        <a>Sign in</a>
       </nav>
       <nav class="mobile">
         <ul>
@@ -31,8 +31,10 @@
         </ul>
       </nav>
     </header>
+
     <!-- Banner -->
-    <div id="banner">
+
+    <div class="container" id="banner">
       <div class="picture">
         <img src="./resources/images/banner.jpg" alt="banner" />
       </div>
@@ -42,8 +44,10 @@
         <h3>Start here</h3>
       </div>
     </div>
+
     <!-- Features -->
-    <div id="features">
+
+    <div class="container" id="features">
       <div class="main">
         <div class="picture">
           <img src="./resources/images/information-main.jpg" alt="main" />
@@ -87,92 +91,112 @@
         </div>
       </div>
     </div>
+
     <!-- Majors -->
-    <div id="majors">
+
+    <div class="container" id="majors">
       <h1>Start learning</h1>
-      <div class="courses">
-        <div class="picture">
-          <img src="./resources/images/course-software.jpg" alt="software" />
+      <div class="sections">
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-software.jpg" alt="software" />
+          </div>
+          <div class="text">
+            <h1>Software engineering</h1>
+            <h2>COURSES</h2>
+            <h3>Web Development, Mobile Development, iOT, APIs</h3>
+          </div>
         </div>
-        <div class="text">
-          <h1>Software engineering</h1>
-          <h2>COURSES</h2>
-          <h3>Web Development, Mobile Development, iOT, APIs</h3>
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-computer-art.jpg" alt="computer" />
+          </div>
+          <div class="text">
+            <h1>Computer art</h1>
+            <h2>COURSES</h2>
+            <h3>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
+          </div>
         </div>
-        <div class="picture">
-          <img src="./resources/images/course-computer-art.jpg" alt="computer" />
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-design.jpg" alt="design" />
+          </div>
+          <div class="text">
+            <h1>Design</h1>
+            <h2>COURSES</h2>
+            <h3>User Experience Design, User Research, Visual Design</h3>
+          </div>
         </div>
-        <div class="text">
-          <h1>Computer art</h1>
-          <h2>COURSES</h2>
-          <h3>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-data.jpg" alt="data" />
+          </div>
+          <div class="text">
+            <h1>Data</h1>
+            <h2>COURSES</h2>
+            <h3>Data Science, Big Data, SQL, Data Visualization</h3>
+          </div>
         </div>
-        <div class="picture">
-          <img src="./resources/images/course-design.jpg" alt="design" />
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-business.jpg" alt="business" />
+          </div>
+          <div class="text">
+            <h1>Business</h1>
+            <h2>COURSES</h2>
+            <h3>Product Development, Business Development, Startup</h3>
+          </div>
         </div>
-        <div class="text">
-          <h1>Design</h1>
-          <h2>COURSES</h2>
-          <h3>User Experience Design, User Research, Visual Design</h3>
-        </div>
-        <div class="picture">
-          <img src="./resources/images/course-data.jpg" alt="data" />
-        </div>
-        <div class="text">
-          <h1>Data</h1>
-          <h2>COURSES</h2>
-          <h3>Data Science, Big Data, SQL, Data Visualization</h3>
-        </div>
-        <div class="picture">
-          <img src="./resources/images/course-business.jpg" alt="business" />
-        </div>
-        <div class="text">
-          <h1>Business</h1>
-          <h2>COURSES</h2>
-          <h3>Product Development, Business Development, Startup</h3>
-        </div>
-        <div class="picture">
-          <img src="./resources/images/course-marketing.jpg" alt="marketing" />
-        </div>
-        <div class="text">
-          <h1>Marketing</h1>
-          <h2>COURSES</h2>
-          <h3>Analytics, Content Marketing, Mobile Marketing</h3>
+        <div class="courses">
+          <div class="picture">
+            <img src="./resources/images/course-marketing.jpg" alt="marketing" />
+          </div>
+          <div class="text">
+            <h1>Marketing</h1>
+            <h2>COURSES</h2>
+            <h3>Analytics, Content Marketing, Mobile Marketing</h3>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- Exhibits -->
-    <div id="exhibits">
+
+    <div class="container" id="exhibits">
       <h1>Thesis exhibit</h1>
-      <div class="video">
-        <div class="picture">
-          <video width="320" height="240" controls>
-          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+      <div class="showing">
+        <div class="video">
+          <div class="picture">
+            <video width="1080" height="640" controls>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+          </div>
+          <div class="text">
+            <h1>Reimagine urban</h1>
+            <h2>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
+          </div>
         </div>
-        <div class="text">
-          <h1>Reimagine urban</h1>
-          <h2>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h2>
-        </div>
-      </div>
-      <div class="thesis">
-        <div class="picture">
-          <img src="./resources/images/thesis-fisma.jpg" alt="prototype" />
-        </div>
-        <div class="text">
-          <h1>Fisma: Design and Prototype</h1>
-          <h2>Designer showcase of new prototype product</h2>
-        </div>
-        <div class="picture">
-          <img src="./resources/images/thesis-now-and-then.jpg" alt="new york" />
-        </div>
-        <div class="text">
-          <h1>Now and then</h1>
-          <h2>Research study about New York</h2>
+        <div class="thesis">
+          <div class="picture">
+            <img src="./resources/images/thesis-fisma.jpg" alt="prototype" />
+          </div>
+          <div class="text">
+            <h1>Fisma: Design and Prototype</h1>
+            <h2>Designer showcase of new prototype product</h2>
+          </div>
+          <div class="picture">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="new york" />
+          </div>
+          <div class="text">
+            <h1>Now and then</h1>
+            <h2>Research study about New York</h2>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
-    <footer>
+
+    <footer class="container">
       <div class="copyright">
         <span>&copy 2016 Colmar Academy. All rights reserved</span>
       </div>
