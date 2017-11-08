@@ -1,5 +1,25 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v12/H8_7oktkjVeeX06kbAvc0Ary2jK1Y0oNyoF1xLf3zMQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 body {
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: hsl(120, 0%, 30%);
 }
 
 /* Header */
@@ -27,14 +47,26 @@ header {
 
 #first {
   font-weight: bold;
+  color: black;
 }
 
 #second {
   color: grey;
 }
 
+.desktop {
+  display: inline-flex;
+}
+
 .desktop a {
-  margin-left: 1rem;
+  border-right: 16px solid hsla(180, 100%, 50%, 0.5);
+  margin: 0;
+  padding: 1.25rem 0;
+  font-weight: 400;
+}
+
+.desktop a:last-child {
+  border-right: none;
 }
 
 nav.mobile {
@@ -46,19 +78,17 @@ nav.mobile {
 #banner {
   display: flex;
   align-items: center;
-  background-color: lightgrey;
-  color: black;
-  font-weight: lighter;
+  background-color: hsl(120, 0%, 80%);
   line-height: 1.5;
 }
 
-#banner .picture {
+#banner img {
   width: 60%;
   padding: 2rem 1.5rem;
 }
 
 #banner .text {
-  margin: 0 2rem;
+  margin: 0 10% 0 2rem;
 }
 
 #banner h1 {
@@ -76,7 +106,9 @@ nav.mobile {
   background-color: black;
   color: white;
   padding: 0.5rem 0;
+  margin-top: 2rem;
   text-align: center;
+  width: 75%;
 }
 
 /* Features */
@@ -85,47 +117,54 @@ nav.mobile {
   display: flex;
 }
 
-#features .main img {
-  padding: 2rem 1.5rem;
+#features .main {
+  margin: 2rem 1.5rem;
 }
 
-#features .main .text {
-  margin: 0 2rem;
+#features h2,
+#features h3 {
+  font-weight: 400;
 }
 
 #features .main h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 #features .main h2 {
-  font-size: 2rem;
+  width: 90%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-top: 1.5rem;
 }
 
 #features .main h3 {
   font-size: 1rem;
+  padding-top: 2rem;
 }
 
 #features .dates {
   display: inline-flex;
   flex-flow: row wrap;
-  margin: 1rem;
+  margin: 2rem 0;
 }
 
 #features .info {
   display: inline-flex;
   align-items: center;
-  width: 40rem;
+  width: 100%;
+  border: 2px solid hsl(120, 0%, 90%);
 }
 
-.info .picture {
-  width: 35%;
-  height: auto;
+.info img {
   margin: 1rem;
+  width: 33%;
+  height: auto;
 }
 
 .info .text {
   width: 65%;
-  margin-left: 6rem;
+  margin-left: 2rem;
   line-height: 2;
 }
 
@@ -142,21 +181,25 @@ nav.mobile {
   color: blue;
 }
 
+.lecture {
+  background-color: hsl(120, 0%, 90%);
+}
+
 /* Majors */
 
 #majors {
-  background-color: lightgrey;
+  background-color: hsl(120, 10%, 95%);
+  padding: 0 4.5rem 2rem 4.5rem;
+}
+
+#majors h1.top {
+  font-size: 3rem;
+  text-align: center;
   padding: 2rem 0;
 }
 
-#majors h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
 #majors .text {
-  padding-bottom: 2rem;
+  margin: 1rem;
 }
 
 #majors .text h1 {
@@ -168,12 +211,14 @@ nav.mobile {
 #majors .text h2,
 #majors .text h3 {
   font-size: 1.5rem;
-  margin: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0.5rem 1rem;
 }
 
 .sections {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -181,6 +226,8 @@ nav.mobile {
 .courses {
   width: 30%;
   padding-bottom: 2rem;
+  background: white;
+  margin: 1rem;
 }
 
 .courses img {
@@ -189,10 +236,10 @@ nav.mobile {
 
 /* Exhibits */
 
-#exhibits h1 {
+#exhibits h1.top {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem 0;
 }
 
 #exhibits .text h1 {
