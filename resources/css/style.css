@@ -36,40 +36,40 @@ header {
   z-index: 20;
 }
 
-.logo {
+header .logo {
   display: inline-flex;
   align-items: center;
 }
 
-.logo img {
+header .logo img {
   height: 3rem;
 }
 
-#first {
+header #first {
   font-weight: bold;
   color: black;
 }
 
-#second {
+header #second {
   color: grey;
 }
 
-.desktop {
+header .desktop {
   display: inline-flex;
 }
 
-.desktop a {
+header .desktop a {
   border-right: 16px solid hsla(180, 100%, 50%, 0.5);
   margin: 0;
   padding: 1.25rem 0;
   font-weight: 400;
 }
 
-.desktop a:last-child {
+header .desktop a:last-child {
   border-right: none;
 }
 
-.mobile {
+header .mobile {
   display: none;
 }
 
@@ -236,6 +236,7 @@ header {
 
 #majors .courses img {
   margin: 0;
+  width: 100%;
 }
 
 /* Exhibits */
@@ -267,16 +268,12 @@ header {
   display: flex;
 }
 
-#exhibits .video {
-  margin: 0 2rem;
-  width: 60%;
+#exhibits .video.desktop {
+  margin: 0 1.5rem;
+  width: 100%;
 }
 
-#exhibits video.desktop {
-  width: auto;
-}
-
-#exhibits video.mobile {
+#exhibits .video.mobile {
   display: none;
 }
 
@@ -350,19 +347,19 @@ footer .terms span{
     padding: 0;
     justify-content: center;
   }
-  .logo {
+  header .logo {
     display: none;
   }
-  .desktop {
+  header .desktop {
     display: none;
   }
-  .mobile {
+  header .mobile {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
-  .mobile img {
+  header .mobile img {
     height: 75%;
     padding: 0 25%;
   }
@@ -470,11 +467,12 @@ footer .terms span{
     margin: 0;
     width: 100%;
   }
-  #exhibits video.desktop {
+  #exhibits .video.desktop {
     display: none;
   }
-  #exhibits video.mobile {
+  #exhibits .video.mobile {
     display: block;
+    border: 2px solid grey;
   }
   footer {
     display: inline;
