@@ -203,7 +203,7 @@ header .mobile {
   font-size: 1rem;
 }
 
-#features .info .text h3 {
+#features .info .text h3 a {
   font-size: 1rem;
   color: blue;
 }
@@ -256,7 +256,7 @@ header .mobile {
   margin: 0.5rem 1rem;
 }
 
-#majors .text h3 {
+#majors .text h3 a {
   color: hsl(240, 100%, 30%);
 }
 
@@ -376,17 +376,16 @@ header .mobile {
   background-color: hsl(120,  100%, 80%);
 }
 
-
 /* Footer */
 
 footer {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
-  border-top: 2px solid hsl(120, 0%, 50%);
+  border-top: 2px solid hsl(180, 40%, 70%);
   padding: 1rem 1.5rem;
   height: 4rem;
-  color: hsl(120, 0%, 10%);
+  color: hsl(240, 100%, 30%);
 }
 
 footer .copyright span {
